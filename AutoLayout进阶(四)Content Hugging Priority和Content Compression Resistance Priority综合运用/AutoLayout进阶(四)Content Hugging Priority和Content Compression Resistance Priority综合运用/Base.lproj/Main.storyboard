@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YqQ-4z-ePB"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Kb-pF-YWP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83a-dZ-ptV">
+                                <rect key="frame" x="0.0" y="200" width="375" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="sBD-kf-iqL">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="sBD-kf-iqL" secondAttribute="height" multiplier="1:1" id="kEG-JN-6bG"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gL-0C-DTk">
+                                        <rect key="frame" x="85" y="0.0" width="48" height="80"/>
+                                        <color key="backgroundColor" red="1" green="0.85541593230000001" blue="0.23764349770000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jua-0Q-Ia9">
+                                        <rect key="frame" x="138" y="0.0" width="232" height="80"/>
+                                        <color key="backgroundColor" red="0.57250618501927375" green="0.73563495923936095" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="2gL-0C-DTk" secondAttribute="bottom" id="53U-Vk-On2"/>
+                                    <constraint firstItem="Jua-0Q-Ia9" firstAttribute="top" secondItem="83a-dZ-ptV" secondAttribute="top" id="5lZ-bW-Jtp"/>
+                                    <constraint firstItem="2gL-0C-DTk" firstAttribute="top" secondItem="83a-dZ-ptV" secondAttribute="top" id="9nz-hh-P82"/>
+                                    <constraint firstItem="sBD-kf-iqL" firstAttribute="top" secondItem="83a-dZ-ptV" secondAttribute="top" id="RR2-qc-Sdd"/>
+                                    <constraint firstAttribute="height" constant="80" id="TXR-fH-sFv"/>
+                                    <constraint firstItem="Jua-0Q-Ia9" firstAttribute="leading" secondItem="2gL-0C-DTk" secondAttribute="trailing" constant="5" id="XOy-DF-Ths"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jua-0Q-Ia9" secondAttribute="trailing" constant="5" id="YzO-rF-VQQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="sBD-kf-iqL" secondAttribute="bottom" id="d2h-xH-XIB"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jua-0Q-Ia9" secondAttribute="bottom" id="dm8-cA-s04"/>
+                                    <constraint firstItem="2gL-0C-DTk" firstAttribute="leading" secondItem="sBD-kf-iqL" secondAttribute="trailing" constant="5" id="rnT-tS-Slx"/>
+                                    <constraint firstItem="sBD-kf-iqL" firstAttribute="leading" secondItem="83a-dZ-ptV" secondAttribute="leading" id="tvl-nM-gut"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="83a-dZ-ptV" secondAttribute="trailing" id="WQn-aO-Yz8"/>
+                            <constraint firstItem="83a-dZ-ptV" firstAttribute="top" secondItem="YqQ-4z-ePB" secondAttribute="bottom" constant="180" id="YEV-PY-wKI"/>
+                            <constraint firstItem="83a-dZ-ptV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pPu-zH-vf4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLab" destination="2gL-0C-DTk" id="pqz-i2-SCJ"/>
+                        <outlet property="timeLab" destination="Jua-0Q-Ia9" id="74I-pE-8LH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon.jpeg" width="200" height="200"/>
+    </resources>
+</document>

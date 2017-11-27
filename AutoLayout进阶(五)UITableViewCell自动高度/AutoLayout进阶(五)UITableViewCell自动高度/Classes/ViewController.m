@@ -24,11 +24,9 @@ static NSString *const id_DemoCell = @"DemoCell";
     [super viewDidLoad];
     
     [self.view addSubview:self.tableView];
-    [self.tableView registerNib:[UINib nibWithNibName:id_DemoCell bundle:nil] forCellReuseIdentifier:id_DemoCell];
     
-    // Do any additional setup after loading the view, typically from a nib.
+    [self.tableView registerNib:[UINib nibWithNibName:id_DemoCell bundle:nil] forCellReuseIdentifier:id_DemoCell];
 }
-
 
 #pragma mark - tableView
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -47,12 +45,6 @@ static NSString *const id_DemoCell = @"DemoCell";
     cell.model = model;
     return cell;
 }
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    
-}
 #pragma mark - lazy
 -(UITableView *)tableView{
     if(!_tableView){
@@ -61,9 +53,13 @@ static NSString *const id_DemoCell = @"DemoCell";
         _tableView.dataSource = self;
         _tableView.estimatedRowHeight = 250;
         _tableView.rowHeight = UITableViewAutomaticDimension;
+        
     }
     return _tableView;
 }
+
+
+ /** 从文件加载数据 */
 -(NSArray *)dataArray{
     if(!_dataArray){
         NSString *path = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"json"];

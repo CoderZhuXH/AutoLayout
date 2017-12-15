@@ -43,6 +43,7 @@
 		0CEA09751FCB2D7B00103245 /* DemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEA096E1FCB2D7A00103245 /* DemoCell.m */; };
 		0CEA09761FCB2D7B00103245 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEA096F1FCB2D7B00103245 /* ViewController.m */; };
 		0CEA09771FCB2D7B00103245 /* DemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CEA09711FCB2D7B00103245 /* DemoCell.xib */; };
+		60FC15011FE36408006E3E94 /* JPFPSStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FC15001FE36408006E3E94 /* JPFPSStatus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,8 @@
 		0CEA09701FCB2D7B00103245 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0CEA09711FCB2D7B00103245 /* DemoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoCell.xib; sourceTree = "<group>"; };
 		0CEA09721FCB2D7B00103245 /* DemoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoModel.h; sourceTree = "<group>"; };
+		60FC14FF1FE36408006E3E94 /* JPFPSStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPFPSStatus.h; sourceTree = "<group>"; };
+		60FC15001FE36408006E3E94 /* JPFPSStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPFPSStatus.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,7 @@
 		0CEA09161FCB26BA00103245 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				60FC14FE1FE36408006E3E94 /* JPFPSStatus */,
 				0CEA091F1FCB28F600103245 /* SDWebImage */,
 				0CEA09171FCB26BA00103245 /* YYModel */,
 			);
@@ -261,6 +265,15 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		60FC14FE1FE36408006E3E94 /* JPFPSStatus */ = {
+			isa = PBXGroup;
+			children = (
+				60FC14FF1FE36408006E3E94 /* JPFPSStatus.h */,
+				60FC15001FE36408006E3E94 /* JPFPSStatus.m */,
+			);
+			path = JPFPSStatus;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -349,6 +362,7 @@
 				0CEA095A1FCB28F700103245 /* SDWebImageDownloader.m in Sources */,
 				0CEA095D1FCB28F700103245 /* SDWebImageImageIOCoder.m in Sources */,
 				0CEA09631FCB28F700103245 /* UIImage+GIF.m in Sources */,
+				60FC15011FE36408006E3E94 /* JPFPSStatus.m in Sources */,
 				0CEA091D1FCB26BA00103245 /* NSObject+YYModel.m in Sources */,
 				0CEA09751FCB2D7B00103245 /* DemoCell.m in Sources */,
 				0CEA09561FCB28F700103245 /* SDImageCacheConfig.m in Sources */,
@@ -499,6 +513,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "AutoLayout进阶(五)UITableViewCell自动高度/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -513,6 +528,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "AutoLayout进阶(五)UITableViewCell自动高度/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -10,12 +10,15 @@
 #import "DemoModel.h"
 #import "YYModel.h"
 #import "DemoCell.h"
+#import "JPFPSStatus.h"
+
 
 static NSString *const id_DemoCell = @"DemoCell";
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) NSArray *dataArray;
 @property (nonatomic, strong) UITableView *tableView;
+
 @end
 
 @implementation ViewController
@@ -26,6 +29,12 @@ static NSString *const id_DemoCell = @"DemoCell";
     [self.view addSubview:self.tableView];
     
     [self.tableView registerNib:[UINib nibWithNibName:id_DemoCell bundle:nil] forCellReuseIdentifier:id_DemoCell];
+    
+    /** FPS */
+    [[JPFPSStatus sharedInstance] openWithHandler:^(NSInteger fpsValue) {
+        NSLog(@"FPS = %ld" ,fpsValue);
+    }];
+
 }
 
 #pragma mark - tableView
